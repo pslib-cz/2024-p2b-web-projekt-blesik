@@ -1,0 +1,198 @@
+@media screen and (max-width: 360px) {
+  .products {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    justify-items: center;
+
+  .napis {
+    flex-grow: 1; /* Umožní nápisu růst a vyplnit dostupný prostor */
+    text-align: center; /* Nápis je horizontálně vycentrován */
+    max-width: 250px;
+  }
+
+}
+  .bilej,
+  .product,
+  .tmavej,
+  .modrej {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    max-width: 300px;
+  }
+
+  .product img,
+  .modrej img {
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+
+  .tmavej img {
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+    margin-left: -20px;
+    margin-right: 60px;
+  }
+
+  .bilej img {
+    min-width: 220px;
+    min-height: 500px;
+    object-fit: contain;
+  }
+
+  .product h2,
+  .bilej h2,
+  .tmavej h2,
+  .modrej h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  .product h2::before,
+  .bilej h2::before,
+  .tmavej h2::before,
+  .modrej h2::before {
+    display: block;
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+
+  .product-buttons {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+  }
+
+  .product-buttons .btn {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+  }
+}
+
+html {
+    font-family: system-ui, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    color: #fff; 
+}
+
+/* Nastavení pro header */
+.header {
+    display: flex;
+    justify-content: space-between; /* Mezi prvky v headeru je maximální mezera */
+    align-items: center; /* Vertikálně je vše zarovnáno na střed */
+}
+
+.napis {
+    flex-grow: 1; /* Umožní nápisu růst a vyplnit dostupný prostor */
+    text-align: center; /* Nápis je horizontálně vycentrován */
+    max-width: 250px;
+}
+
+.menu {
+    margin-right: 20px;
+}
+
+/* Layout sekce s produkty - dvě produkty vedle sebe */
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 sloupce */
+    gap: 1rem; /* mezera mezi produkty */
+    margin-top: 20px; /* trošku mezery nahoře */
+}
+
+/* Každý produkt jako grid: text pod obrázkem */
+.product {
+    display: flex;
+    flex-direction: column; /* Obrázek nahoře, text dole */
+    align-items: center; /* Horizontální centrování */
+    gap: 1rem;
+}
+
+/* Obrázky produktů - zmenšené, ale zachovávající poměr stran */
+.product img {
+    width: 200px; /* Nastavení pevné šířky */
+    height: auto; /* Výška se přizpůsobí poměru stran */
+    object-fit: contain; /* Zajistí, že obrázek bude celý vidět */
+    border-radius: 8px; /* Zaoblení rohů pro lepší vzhled */
+}
+
+.product img {
+    width: 200px; /* Nastavení pevné šířky */
+    max-height: 500px;
+    min-height: 500px; 
+    object-fit: contain; /* Zajistí, že obrázek bude celý vidět */
+    border-radius: 8px; /* Zaoblení rohů pro lepší vzhled */
+}
+
+.bilej img {
+    max-height: 500px;
+}
+
+.tmavej img {
+    min-height: 440px;
+    padding-left: 70px;
+    padding-top: 58px;
+}
+
+.modrej img {
+    min-height: 510px;
+    padding-left: 70px;
+}
+
+/* Textové informace */
+.product h2 {
+    text-align: center; /* Text je vycentrován */
+}
+
+.bilej h2 {
+    text-align: center; /* Text je vycentrován */
+}
+
+.tmavej h2 {
+    text-align: center; /* Text je vycentrován */
+}
+
+.modrej h2 {
+    text-align: center; /* Text je vycentrován */
+}
+
+.product-buttons {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.product-buttons .btn {
+    background-color: rgb(10, 178, 208);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.product-buttons .btn.secondary {
+    background-color: #444;
+}
+
+/* Obrázek s responsivním nastavením */
+.product-image img {
+    width: 100px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
