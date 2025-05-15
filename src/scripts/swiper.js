@@ -1,28 +1,14 @@
-import Swiper from 'swiper';
-import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+const slides = document.querySelectorAll(".slide");
+let current = 0;
 
-const swiper = new Swiper('.swiper', {
-    modules: [Navigation, Pagination, Scrollbar],
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
+document.getElementById("left-arrow").addEventListener("click", () => {
+  slides[current].classList.remove("active");
+  current = (current - 1 + slides.length) % slides.length;
+  slides[current].classList.add("active");
+});
 
-    scrollbar: {
-        el: '.swiper-scrollbar',
-        draggable: true,
-    },
-    loop: true,
-    autoplay: {
-        delay: 4000,
-        disableOnInteraction: true,
-    },  
+document.getElementById("right-arrow").addEventListener("click", () => {
+  slides[current].classList.remove("active");
+  current = (current + 1) % slides.length;
+  slides[current].classList.add("active");
 });
