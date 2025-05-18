@@ -1,0 +1,1 @@
+const t=document.querySelectorAll(".slide");let e=0;document.getElementById("left-arrow").addEventListener("click",()=>{t[e].classList.remove("active"),e=(e-1+t.length)%t.length,t[e].classList.add("active")});document.getElementById("right-arrow").addEventListener("click",()=>{t[e].classList.remove("active"),e=(e+1)%t.length,t[e].classList.add("active")});
