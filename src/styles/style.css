@@ -261,8 +261,8 @@
   text-decoration: none;
 }
 
-.menu-toggle{
-  display: none;
+.menu-toggle {
+  display: flex;
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
@@ -280,7 +280,7 @@
   flex-direction: column;
   position: absolute;
   top: 60px;
-  right: 1rem;
+  left: -1rem;
   width: 200px;
   padding: 1rem;
   border-radius: 8px;
@@ -288,9 +288,4 @@
 
 .menu.show {
   display: flex;
-  }
-
-.menu-toggle {
-  display: flex;
 }
-

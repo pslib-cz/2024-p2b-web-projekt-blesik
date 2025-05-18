@@ -12,8 +12,17 @@
     <img src="%BASE_URL%images/monster energy logo.webp" alt="Logo Monster Energy" class="logo" />
     <img src="%BASE_URL%images/monster energy napis.webp" alt="Nápis Monster Energy" class="napis" />
     <nav class="navbar">
-      <div class="hamburger" id="hamburger">☰</div>
-    </nav>
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu" id="menu">
+          <li><a href="%BASE_URL%../index.html">Produkty</a></li>
+          <li><a href="%BASE_URL%../dotaznik.html">Nákup</a></li>
+          <li><a href="%BASE_URL%../kontakty.html">Kontakty</a></li>
+        </ul>
+      </nav>
   </header>
 
   <div class="main-wrapper">
@@ -64,6 +73,6 @@
   <footer class="footer">
     <img src="%BASE_URL%images/monster energy napis.webp" alt="Logo Monster Energy" class="napis" />
   </footer>
-
+  <script src="%BASE_URL%../src/scripts/hamburger.js"></script>
 </body>
 </html>
