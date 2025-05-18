@@ -5,17 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Úvod | Monster Energy</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="./src/styles/style.css" />
+  <link rel="stylesheet" href="%BASE_URL%../src/styles/style.css" />
 </head>
 <body>
   <header class="header">
     <img src="%BASE_URL%images/monster energy logo.webp" alt="Logo Monster Energy" class="logo" />
     <img src="%BASE_URL%images/monster energy napis.webp" alt="Logo Monster Energy" class="napis" />
     <nav class="navbar">
-      <div class="hamburger" id="hamburger">
-        ☰
-      </div>
-    </nav>
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu" id="menu">
+          <li><a href="%BASE_URL%../.html">Produkty</a></li>
+          <li><a href="#">Nákup</a></li>
+          <li><a href="%BASE_URL%../kontakty.html">Kontakty</a></li>
+        </ul>
+      </nav>
   </header>
   
   <main>
@@ -28,8 +35,8 @@
             <span>ULTRA WHITE</span>
           </h2>
           <div class="product-buttons">
-            <a href="./dotaznik.html" class="btn">Koupit</a>
-            <a href="./koupit-white.html" class="btn secondary">Info</a>
+            <a href="%BASE_URL%../dotaznik.html" class="btn">Koupit</a>
+            <a href="%BASE_URL%../koupit-white.html" class="btn secondary">Info</a>
         </div>
       </article>
 
@@ -41,8 +48,8 @@
           <span>ULTRA BLACK</span>
         </h2>
         <div class="product-buttons">
-          <a href="./dotaznik.html" class="btn">Koupit</a>
-          <a href="./koupit-black.html" class="btn secondary">Info</a>
+          <a href="%BASE_URL%../dotaznik.html" class="btn">Koupit</a>
+          <a href="%BASE_URL%../koupit-black.html" class="btn secondary">Info</a>
         </div>
       </article>
 
@@ -54,8 +61,8 @@
           <span>ULTRA MANGO</span>
         </h2>
         <div class="product-buttons">
-          <a href="./dotaznik.html" class="btn">Koupit</a>
-          <a href="./koupit-mango.html" class="btn secondary">Info</a>
+          <a href="%BASE_URL%../dotaznik.html" class="btn">Koupit</a>
+          <a href="%BASE_URL%./koupit-mango.html" class="btn secondary">Info</a>
         </div>
       </article>
 
@@ -67,8 +74,8 @@
           <span>ULTRA ZERO</span>
         </h2>
         <div class="product-buttons">
-          <a href="./dotaznik.html" class="btn">Koupit</a>
-          <a href="./koupit-zero.html" class="btn secondary">Info</a>
+          <a href="%BASE_URL%./dotaznik.html" class="btn">Koupit</a>
+          <a href="%BASE_URL%../koupit-zero.html" class="btn secondary">Info</a>
         </div>
       </article>
 
@@ -80,8 +87,8 @@
           <span>ULTRA ROSA</span>
         </h2>
         <div class="product-buttons">
-          <a href="./dotaznik.html" class="btn">Koupit</a>
-          <a href="./koupit-rosa.html" class="btn secondary">Info</a>
+          <a href="%BASE_URL%../dotaznik.html" class="btn">Koupit</a>
+          <a href="%BASE_URL%../koupit-rosa.html" class="btn secondary">Info</a>
         </div>
       </article>
 
@@ -98,11 +105,12 @@
         </div>
       </article>
     </section>
-    <a href="./kontakty.html" class="btn secondary">kontakty</a>
+    <a href="%BASE_URL%../kontakty.html" class="btn secondary">Kontakty</a>
   </main>
-  
+
   <footer class="footer">
     <img src="%BASE_URL%images/monster energy napis.webp" alt="Logo Monster Energy" class="napis" />
   </footer>
+  <script src="%BASE_URL%../src/scripts/hamburger.js"></script>
 </body>
 </html>

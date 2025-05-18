@@ -1,8 +1,6 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('nav-menu');
-  
-    hamburger.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-    });
-  });
+const toggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
+
+toggle.addEventListener('click', () => {
+  menu.classList.toggle('show');
+});
